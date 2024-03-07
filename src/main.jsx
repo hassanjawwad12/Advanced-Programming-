@@ -1,10 +1,33 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+//import App from "./App.jsx";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+
+function Headerr() {
+  return (
+    <>
+      <h1>This is it</h1>   
+    </>
+  );
+}
+
+
+function Element() {
+  return (
+    <>
+      <Headerr />
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul>
+    </>
+  );
+}
+
+
+ReactDOM.createRoot(document.getElementById("root")). render(<Element />);
+//ReactDOM.createRoot(document.getElementById("root")).render(element);
+//document.getElementById("root").append(JSON.stringify(element));
+
+//append doesnot understand real DOM
